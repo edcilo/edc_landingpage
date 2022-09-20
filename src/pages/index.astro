@@ -1,8 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+
+import { GoogleAnalytics } from "astro-analytics";
+
+const gaId = import.meta.env.GA_ID;
 ---
 
+<GoogleAnalytics id={gaId} />
 <Layout title="edcilo.com">
   <Hero />
 </Layout>
