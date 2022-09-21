@@ -17,6 +17,11 @@ import Logo from "./Logo.astro";
     position: fixed;
     width: 100%;
     z-index: 900;
-    backdrop-filter: blur(2px);
+    background-image: radial-gradient(
+      rgba(0, 0, 0, 0) 1px,
+      var(--color-secondary) 1px
+    );
+    background-size: 4px 4px;
+    backdrop-filter: blur(3px);
   }
 </style>
